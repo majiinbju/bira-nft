@@ -15,6 +15,10 @@ to this section's matching END comment to see page-specific styles.
   display: none !important;
 }
 
+$color-background: #FF0000;
+$color-outline: #363636;
+$color-fill: #888;
+
 /* Import fonts */
 @font-face {
   font-family: HK Grotesk;
@@ -49,40 +53,49 @@ body {
 }
 
 .box {
-  width:200px;
-  height:200px;
-  border:10px solid #ccc;
-  border-radius:10px;
-  line-height:200px;
-  text-align:center;
-  color:#ddd;
-  font-size:25px;
-  font-weight:600;
-  text-transform:uppercase;
-  position:relative;
-  overflow:hidden;
-}
-.box:before {
-  content:"";
-  position:absolute;
-  width:400px;
-  height:400px;
-  background:pink;
-  left:50%;
-  transform:translateX(-50%);
-  border-radius:40%;
-  animation:fill 7s ease-in-out infinite;
-  z-index:-1;
+  position: absolute;
+  background: red;
+  border: 0.25rem solid $color-outline;
+  box-sizing: border-box;
+  height: 250px;
+  width: 250px;
+  outline: 0;
+  overflow: hidden;
+
+  &::before {
+    content: "CSS";
+    font-family: Arial;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    height: 200%;
+    width: 200%;
+    box-sizing: border-box;
+    background-color: $color-background;
+    border-radius: 40%;
+    animation: spin 6s linear 1;
+    animation-fill-mode: forwards
+  }
 }
 
-@keyframes fill {
-  from {
-    top:250px;
-    transform:translateX(-50%) rotate(0deg);
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
   }
-  to {
-    top:-50px;
-    transform:translateX(-50%) rotate(360deg);
+  100% {
+    transform: translateY(-100%) rotate(360deg);
   }
 }
+
 
