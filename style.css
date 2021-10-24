@@ -62,7 +62,7 @@ body {
 
 .box:before {
     content: "Welcome to the BIRA 91 Engagement Club";
-    font-size:2vw;
+    font-size:4vw;
     height: 100%;
     width: 100%;
     display: flex;
@@ -70,14 +70,6 @@ body {
     justify-content: center;
   }
 
-.intro {
-  font-size:5vw;
-  height:100vw;
-  width:50vw;
-  background:blue;
-  position:absolute;
-  
-}
 
 
   .box:after {
