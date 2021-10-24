@@ -107,9 +107,10 @@ h3:hover {
 .avi{
   width:720px;
   height:720px;
-  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2FBlack%20Swan.png?v=1635093527744);  
+  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2FBlack%20Swan.png?v=1635096176024);  
 	border: 2px dotted blue;
   position:absolute;
+  transform:scale(0.7);
   
 }
 
