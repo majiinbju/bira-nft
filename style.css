@@ -70,6 +70,14 @@ body {
     justify-content: center;
   }
 
+.intro {
+  font-size:5vw;
+  height:100vw;
+  width:50vw;
+  background:blue;
+  position:absolute;
+  
+}
 
 
   .box:after {
@@ -84,7 +92,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: spin 6s linear 1;
+    animation: spin 4s linear 1;
     animation-fill-mode: forwards;
   }
 
