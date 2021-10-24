@@ -41,16 +41,25 @@ body {
 }
 
 
-.loader {
+.landing {
   width:100vw;
   height:100vh;
-  background:yellow;
+  background:black;
   padding:0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.intro{
+  width:50%;
+  height:100%;
+  background:red;
+  position:absolute;
+  margin-right:0;
+}
+
+/* 
 .box {
   position: absolute;
   background: red;
@@ -97,5 +106,5 @@ body {
     transform: translateY(-100%) rotate(360deg);
   }
 }
-
+ */
 
