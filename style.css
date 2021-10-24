@@ -115,6 +115,12 @@ h5{
   line-height: 100%;
 }
 
+h6{
+  font-size:1.5vw;
+  color:white;
+  line-height: 100%;
+}
+
 
 input[type=text], select {
   width: 80%;
@@ -144,13 +150,24 @@ input[type=submit]:hover {
 }
 
 .nav {
-	position: fixed;
+	position: absolute;
  	top: 20px;
   right: 40px;
 	width:auto;
 	height: auto;
 	z-index: 1;
 	float:right;
+	text-align: left;
+}
+
+.links {
+	position: absolute;
+ 	top: 20px;
+  left: 40px;
+	width:auto;
+	height: auto;
+	z-index: 1;
+	float:left;
 	text-align: left;
 }
 
@@ -171,8 +188,7 @@ input[type=submit]:hover {
   width:720px;
   height:720px;
   background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2FBlack%20Swan.png?v=1635096176024);  
-	border: 5px dotted black;
-  border-radius:10%;
+	border: 5px solid white;
   position:absolute;
   transform:scale(0.65);
 }
@@ -243,10 +259,14 @@ input[type=submit]:hover {
 }
 
 .footer{
+  top:300.3vw;
   width:100vw;
-  height:20%;
+  height:20vh;
   bottom:0;
   background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .box {
