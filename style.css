@@ -231,12 +231,24 @@ input[type=submit]:hover {
   height:100vh;
   background:red;
   padding:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-bottom: 3px dotted white;
 }
 
+.picWrapper{
+	width:100vw;
+	height:100vh;
+	display:flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+}
+
+.footer{
+  width:100vw;
+  height:20%;
+  bottom:0;
+  background:black;
+}
 
 .box {
   position: absolute;
