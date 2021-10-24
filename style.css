@@ -72,7 +72,7 @@ section {
 }
 
 section:hover {
-transform:scale(1.25);
+transform:scale(1.15);
   transition:0.3s ease-in-out;
 }
 
@@ -202,10 +202,10 @@ input[type=submit]:hover {
 .avi{
   width:720px;
   height:720px;
-  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2FBlack%20Swan.png?v=1635096176024);  
+  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2Favi.gif?v=1635111193960);  
 	border: 5px solid white;
   margin:auto;
-  transform:scale(0.65);
+  transform:scale(0.6);
 }
 
 
@@ -236,7 +236,7 @@ input[type=submit]:hover {
 }
 
 .mint {
-  top:100.1vw;
+  top:100.25vw;
   width:100vw;
   height:100vh;
   background:black;
@@ -251,6 +251,7 @@ input[type=submit]:hover {
   height:100vh;
   background:red;
   padding:0;
+  border-top: 3px dotted white;
   border-bottom: 3px dotted white;
 }
 
@@ -322,9 +323,7 @@ input[type=submit]:hover {
 
 
 button {
-	margin-top: 10px;
 	font-size: 3vw;
-	line-height: 1.25;
 	border-radius: 10px;
   background:blue;
   color:white;
