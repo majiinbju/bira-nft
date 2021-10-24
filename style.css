@@ -40,6 +40,20 @@ body {
   margin:0;
 }
 
+svg {
+  width: 50px;
+  height: 50px;
+  fill:red;
+  stroke:black;
+  stroke-width:0.5;
+  margin-right:2vw;
+}
+
+svg:hover {
+  fill:black;
+  stroke:red;
+}
+
 article {
   display: inline-grid;
   grid-template-rows: 215px 215px 215px;
