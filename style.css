@@ -73,11 +73,49 @@ h3 {
 	display: inline-block;
 }
 
+h4 {
+	margin-top: 10px;
+	font-size: 2vw;
+	line-height: 1.25;
+	border-radius: 10px;
+  background:red;
+  color:black;
+	border: 2px solid black;
+	padding: 1px 10px 2px 10px;
+  margin-right:0.5em;
+	display: inline-block;
+}
+
 h3:hover {
 	border: 2px dotted black;
 	color: red;
   background:black;
 	box-shadow: 3px 3px 10px white;
+}
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
 .nav {
@@ -95,7 +133,7 @@ h3:hover {
   width:60%;
   height:100%;
   left:0;
-  background:gray;
+  background:;
   position:absolute;
   padding:10px;
   z-index:2;
@@ -111,17 +149,19 @@ h3:hover {
 	border: 2px dotted blue;
   position:absolute;
   transform:scale(0.7);
-  
 }
 
 .rightpane{
   width:40%;
   height:100%;
   right:0;
-  background:red;
+  background:;
   position:absolute;
   padding:10px;
   z-index:2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .landing {
@@ -194,7 +234,6 @@ h3:hover {
     animation: spin 4s linear 1;
     animation-fill-mode: forwards;
   }
-
 
 @keyframes spin {
   0% {
