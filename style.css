@@ -92,20 +92,32 @@ h3:hover {
 }
 
 .leftpane{
-  width:80vw;
-  height:100vh;
+  width:60%;
+  height:100%;
   left:0;
-  background:;
+  background:gray;
   position:absolute;
   padding:10px;
   z-index:2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avi{
+  width:720px;
+  height:720px;
+  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2FBlack%20Swan.png?v=1635093527744);  
+	border: 2px dotted blue;
+  position:absolute;
+  
 }
 
 .rightpane{
-  width:55vw;
-  height:100vh;
+  width:40%;
+  height:100%;
   right:0;
-  background:none;
+  background:red;
   position:absolute;
   padding:10px;
   z-index:2;
