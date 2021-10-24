@@ -100,7 +100,6 @@ h3:hover {
 	border: 2px dotted black;
 	color: red;
   background:black;
-	box-shadow: 3px 3px 10px white;
 }
 
 h4 {
@@ -260,7 +259,7 @@ input[type=submit]:hover {
 }
 
 .box:before {
-    content: "WELCOME TO \ATHE BIRA ENGAGEMENT CLUB";
+    content: "welcome to the bira club";
     white-space: pre-wrap;
     font-size:6vw;
     height: 100%;
