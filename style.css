@@ -95,27 +95,7 @@ h1{
 }
 
 
-button {
-  font-size:10vw;
-	margin-top: 10px;
-	font-size: 1.5vw;
-	line-height: 1.25;
-	border-radius: 10px;
-  background:blue;
-  color:white;
-	border: 2px solid white;
-	padding: 1px 10px 2px 10px;
-  margin:auto;
-  bottom:30%;
-  display:block;
-}
 
-
-button:hover {
-	border: 2px dotted white;
-	color: blue;
-  background:white;
-}
 
 h3 {
 	margin-top: 10px;
@@ -228,14 +208,6 @@ input[type=submit]:hover {
   transform:scale(0.65);
 }
 
-.aviTitle{
-  width:360px;
-  height:40px;
-  background:;
-  position:absolute; 
-  left:17.5%;
-  top:5%;
-}
 
 .rightpane{
   width:40%;
@@ -270,7 +242,6 @@ input[type=submit]:hover {
   background:black;
   padding:0;
   display: block;
-  margin: auto;
   border-bottom: 3px dotted black;
 }
 
@@ -347,4 +318,28 @@ input[type=submit]:hover {
   100% {
     transform: translateY(-100%) rotate(360deg);
   }
+}
+
+
+button {
+	margin-top: 10px;
+	font-size: 3vw;
+	line-height: 1.25;
+	border-radius: 10px;
+  background:blue;
+  color:white;
+	border: 2px solid white;
+	padding: 1px 10px 2px 10px;
+  margin-top:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;
+  display:block;
+}
+
+
+button:hover {
+	border: 2px dotted white;
+	color: blue;
+  background:white;
 }
