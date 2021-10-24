@@ -40,11 +40,48 @@ body {
   margin:0;
 }
 
+.leftpane{
+  width:80vw;
+  height:100vh;
+  left:0;
+  background:;
+  position:absolute;
+  padding:10px;
+  z-index:2;
+}
+
+.rightpane{
+  width:55vw;
+  height:100vh;
+  right:0;
+  background:none;
+  position:absolute;
+  padding:10px;
+  z-index:2;
+}
+
+p{
+  font-size:1.5vw;
+  padding:20px;
+  font-weight:normal;
+  color:white;
+  background:none;
+  z-index:2;
+}
+
+
+h1{
+  font-size:4.5vw;
+  padding:20px;
+  font-weight:normal;
+  color:white;
+  background:none;
+}
 
 .landing {
   width:100vw;
   height:100vh;
-  background:black;
+  background:red;
   padding:0;
   display: flex;
   align-items: center;
@@ -52,11 +89,14 @@ body {
 }
 
 .intro{
-  width:50%;
+  width:70%;
   height:100%;
-  background:red;
+  background:black;
   position:absolute;
-  margin-right:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 
