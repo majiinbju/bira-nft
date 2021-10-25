@@ -16,6 +16,7 @@ Stylesheet for Bira Club
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
     format("opentype");
 }
+
 @font-face {
   font-family: HK Grotesk;
   font-weight: bold;
@@ -23,38 +24,16 @@ Stylesheet for Bira Club
     format("opentype");
 }
 
-/* ELEMENTS */
+/* BODY PROPERTIES */
 
 body {
   font-family: HK Grotesk;
-  background-color: var(--color-bg);
   padding:0;
   margin:0;
 }
 
-button {
-	font-size: 3vw;
-	border-radius: 10px;
-  background:blue;
-  color:white;
-	border: 2px solid white;
-	padding: 1px 10px 2px 10px;
-  margin-top:auto;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:auto;
-  display:block;
-}
 
-
-button:hover {
-	border: 2px dotted white;
-	color: blue;
-  background:white;
-}
-
-
-/* TEXT */
+/* HEADERS AND PARAGRAPHS */
 
 p{
   font-size:1.5vw;
@@ -112,7 +91,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .box:after {
@@ -120,7 +99,7 @@ h2 {
     position: absolute;
     height: 200%;
     width: 200%;
-     bottom: -50%;
+    bottom: -50%;
     left: -50%;
     background: black;
     border-radius: 40%;
@@ -175,6 +154,21 @@ h2 {
 	text-align: left;
 }
 
+/* TWITTER / DISCORD */
+
+svg {
+  width: 50px;
+  height: 50px;
+  fill:red;
+  stroke:black;
+  stroke-width:1;
+  margin-right:2vw;
+}
+
+svg:hover {
+  fill:black;
+}
+
 /* MINTING PAGE */
 
 .mint {
@@ -183,7 +177,8 @@ h2 {
   height:100vh;
   background:black;
   padding:0;
-  display: block;
+  display: flex;
+  flex-direction:column;
   border-top: 3px dotted white;
   border-bottom: 3px dotted white;
 }
@@ -251,3 +246,7 @@ section:hover {
   justify-content:center;
   align-items:center;
 }
+
+/******************************************************************************
+End Stylesheet for Bira Club
+******************************************************************************/
