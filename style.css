@@ -180,8 +180,8 @@ svg:hover {
     top:100.25vw;
     width:100vw;
     height:100vh;
-    background: rgb(255,0,0);
-    background: linear-gradient(360deg, rgba(255,0,0,1) 77%, rgba(0,0,0,1) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 90%, rgba(255,0,0,1) 100%);
     padding:0;
     display: flex;
     flex-direction:column;
@@ -192,8 +192,8 @@ svg:hover {
 .photoScroll {
     overflow:hidden; 
     white-space: nowrap;
-    animation: bannermove 10s linear infinite;
-    margin-bottom:15vh;
+    animation: bannermove 15s linear infinite;
+    margin-bottom:7.5vh;
 }
 
 .photoScroll img {    
@@ -206,12 +206,10 @@ svg:hover {
 }
 
 @keyframes bannermove {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-50%, 0);
-    }
+     100% { 
+    transform: translateX(-66.6666%);  
+  }
+
 }
 
 /*  Mint Button */
