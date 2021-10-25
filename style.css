@@ -161,8 +161,7 @@ svg:hover {
     top:100vh;
     width:100vw;
     height:100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: black;
     padding:0;
     display: flex;
     flex-direction:column;
@@ -170,8 +169,9 @@ svg:hover {
     justify-content: center;
 }
 
-.mint h3{
+/* .mint h3{
     font-size:10vw;
+    height:0;
     line-height: 100%;
     justify-content: left;
     align-items:left;
@@ -181,13 +181,14 @@ svg:hover {
 }
 
 .mint p{
-    font-size:3vw;
+    font-size:1vw;
+    width:70%;
     line-height: 100%;
-    justify-content: left;
+    justify-content: center;
     align-items:center;
     color:red;
     font-weight:normal;
-}
+} */
 
 /* Photo Scroll Animation*/
 .photoScroll {
@@ -237,7 +238,8 @@ svg:hover {
     top:200vh;
     width:100vw;
     height:100vh;
-    background:red;
+    background: rgb(255,0,0);
+    background: linear-gradient(0deg, rgba(255,0,0,1) 77%, rgba(0,0,0,1) 100%);
     padding:0;
     border-bottom: 3px dotted white;
 }
@@ -281,9 +283,10 @@ section:hover {
 /* FOOTER */
 
 .footer{
-    top:300vh;
+    top:330vh;
     width:100vw;
-    height:20vh;
+    height:5vh;
+    padding:10px;
     bottom:0;
     background:black;
     display:flex;
@@ -292,7 +295,7 @@ section:hover {
 }
 
 .footer h2 {
-  font-size:1.5vw;
+  font-size:1vw;
   color:white;
   line-height: 100%;
 }
