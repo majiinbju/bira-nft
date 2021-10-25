@@ -1,10 +1,5 @@
 /******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
+Stylesheet for Bira Club
 ******************************************************************************/
 
 /* Basic page style resets */
@@ -15,11 +10,7 @@ to this section's matching END comment to see page-specific styles.
   display: none !important;
 }
 
-$color-background: #FF0000;
-$color-outline: #363636;
-$color-fill: #888;
-
-/* Import fonts */
+/* Placeholder Font */
 @font-face {
   font-family: HK Grotesk;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
@@ -32,6 +23,7 @@ $color-fill: #888;
     format("opentype");
 }
 
+/* ELEMENTS */
 
 body {
   font-family: HK Grotesk;
@@ -40,41 +32,29 @@ body {
   margin:0;
 }
 
-svg {
-  width: 50px;
-  height: 50px;
-  fill:red;
-  stroke:black;
-  stroke-width:1;
-  margin-right:2vw;
+button {
+	font-size: 3vw;
+	border-radius: 10px;
+  background:blue;
+  color:white;
+	border: 2px solid white;
+	padding: 1px 10px 2px 10px;
+  margin-top:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;
+  display:block;
 }
 
-svg:hover {
-  fill:black;
+
+button:hover {
+	border: 2px dotted white;
+	color: blue;
+  background:white;
 }
 
-article {
-  display: inline-grid;
-  grid-template-rows: 215px 215px 215px;
-  grid-template-columns: 215px 215px 215px;
-  grid-gap: 50px;
-}
 
-section {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid black;
-  font-size: 3em;
-  transform:scale(1);
-  transition:0.3s ease-in-out;
-}
-
-section:hover {
-transform:scale(1.15);
-  transition:0.3s ease-in-out;
-}
+/* TEXT */
 
 p{
   font-size:1.5vw;
@@ -87,18 +67,7 @@ p{
 
 
 h1{
-  font-size:4.5vw;
-  padding:20px;
-  font-weight:normal;
-  color:white;
-  background:none;
-}
-
-
-
-
-h3 {
-	margin-top: 10px;
+  margin-top: 10px;
 	font-size: 1.5vw;
 	line-height: 1.25;
 	border-radius: 10px;
@@ -110,169 +79,20 @@ h3 {
 	display: inline-block;
 }
 
-
-h3:hover {
+h1:hover {
 	border: 2px dotted black;
 	color: red;
   background:black;
 }
 
-h4 {
-	font-size: 3vw;
-	border-radius: 10px;
-  color:white;
-  line-height: 100%;
-}
 
-h5{
+h2 {
   font-size:1.5vw;
   color:white;
   line-height: 100%;
 }
 
-h6{
-  font-size:1.5vw;
-  color:white;
-  line-height: 100%;
-}
-
-
-input[type=text], select {
-  width: 80%;
-  font-size:2vw;
-  font-family: HK Grotesk;
-  padding: 12px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 80%;
-  background-color: blue;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: black;
-  color:white;
-}
-
-.nav {
-	position: absolute;
- 	top: 20px;
-  right: 40px;
-	width:auto;
-	height: auto;
-	z-index: 1;
-	float:right;
-	text-align: left;
-}
-
-.links {
-	position: absolute;
- 	top: 20px;
-  left: 40px;
-	width:auto;
-	height: auto;
-	z-index: 1;
-	float:left;
-	text-align: left;
-}
-
-.leftpane{
-  width:60%;
-  height:100%;
-  left:0;
-  background:;
-  position:absolute;
-  padding:10px;
-  z-index:2;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
-.avi{
-  width:720px;
-  height:720px;
-  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2Favi.gif?v=1635111193960);  
-	border: 5px solid white;
-  margin:auto;
-  transform:scale(0.6);
-}
-
-
-.rightpane{
-  width:40%;
-  height:100%;
-  right:0;
-  margin-right:10%;
-  margin-bottom:20%;
-  background:;
-  position:absolute;
-  padding:10px;
-  z-index:2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.landing {
-  width:100vw;
-  height:100vh;
-  background:red;
-  padding:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mint {
-  top:100.25vw;
-  width:100vw;
-  height:100vh;
-  background:black;
-  padding:0;
-  display: block;
-  border-top: 3px dotted white;
-  border-bottom: 3px dotted white;
-}
-
-.gallery {
-  top:200.3vw;
-  width:100vw;
-  height:100vh;
-  background:red;
-  padding:0;
-  border-bottom: 3px dotted white;
-}
-
-.picWrapper{
-	width:100vw;
-	height:100vh;
-	display:flex;
-  align-items: center;
-  justify-content: center;
-  position:absolute;
-}
-
-.footer{
-  top:300.3vw;
-  width:100vw;
-  height:20vh;
-  bottom:0;
-  background:black;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
+/* LANDING ANIMATION */
 
 .box {
   position: absolute;
@@ -320,24 +140,114 @@ input[type=submit]:hover {
   }
 }
 
+/* LANDING */
 
-button {
-	font-size: 3vw;
-	border-radius: 10px;
-  background:blue;
-  color:white;
-	border: 2px solid white;
-	padding: 1px 10px 2px 10px;
-  margin-top:auto;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:auto;
-  display:block;
+
+.landing {
+  width:100vw;
+  height:100vh;
+  background:red;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.nav {
+	position: absolute;
+ 	top: 20px;
+  right: 40px;
+	width:auto;
+	height: auto;
+	z-index: 1;
+	float:right;
+	text-align: left;
+}
 
-button:hover {
-	border: 2px dotted white;
-	color: blue;
-  background:white;
+.links {
+	position: absolute;
+ 	top: 20px;
+  left: 40px;
+	width:auto;
+	height: auto;
+	z-index: 1;
+	float:left;
+	text-align: left;
+}
+
+/* MINTING PAGE */
+
+.mint {
+  top:100.25vw;
+  width:100vw;
+  height:100vh;
+  background:black;
+  padding:0;
+  display: block;
+  border-top: 3px dotted white;
+  border-bottom: 3px dotted white;
+}
+
+.avi{
+  width:720px;
+  height:720px;
+  background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2Favi.gif?v=1635111193960);  
+	border: 5px solid white;
+  margin:auto;
+  transform:scale(0.6);
+}
+
+/* OPENSEA / GALLERY */
+
+.gallery {
+  top:200.3vw;
+  width:100vw;
+  height:100vh;
+  background:red;
+  padding:0;
+  border-bottom: 3px dotted white;
+}
+
+.picWrapper{
+	width:100vw;
+	height:100vh;
+	display:flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+}
+
+article {
+  display: inline-grid;
+  grid-template-rows: 215px 215px 215px;
+  grid-template-columns: 215px 215px 215px;
+  grid-gap: 50px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  font-size: 3em;
+  transform:scale(1);
+  transition:0.3s ease-in-out;
+}
+
+section:hover {
+  transform:scale(1.15);
+  transition:0.3s ease-in-out;
+}
+
+/* FOOTER */
+
+.footer{
+  top:300.3vw;
+  width:100vw;
+  height:20vh;
+  bottom:0;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
