@@ -185,30 +185,43 @@ svg:hover {
   border-bottom: 3px dotted white;
 }
 
-.avi{
+.photoScroll {
+  overflow:hidden; 
+  white-space: nowrap;
+  animation: bannermove 10s linear infinite;
+}
+
+.photoScroll img {    
+  margin: 0 0.5em 
+}
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}
+
+/* .avi{
   width:350px;
   height:350px;
   background:url(https://cdn.glitch.me/fb44604e-13a5-41f5-97e4-ec3680fd8ac0%2Favi.gif?v=1635111193960) no-repeat center;
-  
+  background-size: contain;
 	border: 5px solid white;
-  margin:auto;
+  margin-bottom:0;
   transition:0.3s ease-in-out;
-}
+} */
 
-.avi:hover{
-  transform:scale(1.1);
-  transition:0.3s ease-in-out;
-}
 
 .mint button {
 	font-size: 5vw;
-	border-radius: 10px;
+  width:350px;
   background:blue;
   color:white;
 	border: 2px solid white;
 	padding: 1vw;
-  margin-bottom:10vh;
-  transition:0.3s ease-in-out;
 }
 
 
@@ -216,8 +229,6 @@ svg:hover {
 	border: 2px dotted white;
 	color: blue;
   background:white;
-  transform:scale(1.5);
-  transition:0.3s ease-in-out;
 }
 
 /* OPENSEA / GALLERY */
