@@ -54,19 +54,20 @@ h2 {
 /* LANDING ANIMATION */
 
 .box {
-  position: absolute;
-  background: red;
-  height: 100vh;
-  width: 100vw;
-  outline: 0;
-  overflow: hidden;
+    position: absolute;
+    background: rgb(255,0,0);
+    background: linear-gradient(180deg, rgba(255,0,0,1) 77%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    outline: 0;
+    overflow: hidden;
 }
 
 .box:before {
-    content: "welcome to \A the bira club";
+    content: "welcome to\A the bira club";
     white-space: pre-wrap;
     font-size:10vw;
-    line-height: 90%;
+    line-height: 100%;
     height: 100%;
     width: 100%;
     display: flex;
@@ -105,187 +106,190 @@ h2 {
 
 
 .landing {
-  width:100vw;
-  height:100vh;
-  background:red;
-  padding:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width:100vw;
+    height:100vh;
+    background:red;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Nav Bar */
 
 .nav {
-	position: absolute;
- 	top: 20px;
-  right: 40px;
-	width:auto;
-	height: auto;
-	z-index: 1;
-	float:right;
-	text-align: left;
+	  position: absolute;
+ 	  top: 20px;
+    right: 40px;
+	  width:auto;
+	  height: auto;
+	  z-index: 1;
+	  float:right;
+	  text-align: left;
 }
 
 .links {
-	position: absolute;
- 	top: 20px;
-  left: 40px;
-	width:auto;
-	height: auto;
-	z-index: 1;
-	float:left;
-	text-align: left;
+	  position: absolute;
+ 	  top: 20px;
+    left: 40px;
+	  width:auto;
+	  height: auto;
+	  z-index: 1;
+	  float:left;
+	  text-align: left;
 }
 
 .nav h1{
-  margin-top: 10px;
-	font-size: 1.5vw;
-	line-height: 1.25;
-	border-radius: 10px;
-  background:red;
-  color:black;
-	border: 2px solid black;
-	padding: 1px 10px 2px 10px;
-  margin-right:0.5em;
-	display: inline-block;
+    margin-top: 10px;
+	  font-size: 1.5vw;
+	  line-height: 1.25;
+	  border-radius: 10px;
+    background:red;
+    color:black;
+	  border: 2px solid black;
+	  padding: 1px 10px 2px 10px;
+    margin-right:0.5em;
+	  display: inline-block;
 }
 
 .nav h1:hover {
-	border: 2px dotted black;
-	color: red;
-  background:black;
+	  border: 2px dotted black;
+	  color: red;
+    background:black;
 }
 
 /* TWITTER / DISCORD */
 
 svg {
-  width: 50px;
-  height: 50px;
-  fill:red;
-  stroke:black;
-  stroke-width:1;
-  margin-right:2vw;
+    width: 50px;
+    height: 50px;
+    fill:red;
+    stroke:black;
+    stroke-width:1;
+    margin-right:2vw;
 }
 
 svg:hover {
-  fill:black;
-  stroke:red;
+    fill:black;
+    stroke:red;
 }
 
 /* MINTING PAGE */
 
 .mint {
-  top:100.25vw;
-  width:100vw;
-  height:100vh;
-  background:black;
-  padding:0;
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: center;
-  border-top: 3px dotted white;
-  border-bottom: 3px dotted white;
+    top:100.25vw;
+    width:100vw;
+    height:100vh;
+    background: rgb(255,0,0);
+    background: linear-gradient(360deg, rgba(255,0,0,1) 77%, rgba(0,0,0,1) 100%);
+    padding:0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 }
 /* Photo Scroll Animation*/
 .photoScroll {
-  overflow:hidden; 
-  white-space: nowrap;
-  animation: bannermove 10s linear infinite;
-  margin-bottom:15vh;
+    overflow:hidden; 
+    white-space: nowrap;
+    animation: bannermove 10s linear infinite;
+    margin-bottom:15vh;
 }
 
 .photoScroll img {    
-  margin: 0 0.5em;
-  border: 2px solid white;
+    margin: 0 0.5em;
+    border: 2px dotted white;
+}
+
+.photoScroll:hover {
+   animation-play-state: paused;
 }
 
 @keyframes bannermove {
-  0% {
-      transform: translate(0, 0);
-  }
-  100% {
-      transform: translate(-50%, 0);
-  }
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
 /*  Mint Button */
 
 .mint button {
-	font-size: 3vw;
-  border-radius:10px;
-  background:blue;
-  color:white;
-	border: 2px solid white;
-	padding: 1vw;
+	  font-size: 3vw;
+    border-radius:10px;
+    background: rgb(36,0,0);
+    background: linear-gradient(0deg, rgba(36,0,0,1) 0%, rgba(255,216,4,1) 50%, rgba(255,255,255,1) 100%);
+    color:black;
+	  border: 2px solid gold;
+	  padding: 2vw;
 }
 
 
 .mint button:hover {
-	border: 2px dotted white;
-	color: blue;
-  background:white;
+	  border: 2px dotted white;
+	  color: white;
 }
 
 /* OPENSEA / GALLERY */
 
 .gallery {
-  top:200.3vw;
-  width:100vw;
-  height:100vh;
-  background:red;
-  padding:0;
-  border-bottom: 3px dotted white;
+    top:200.3vw;
+    width:100vw;
+    height:100vh;
+    background:red;
+    padding:0;
+    border-bottom: 3px dotted white;
 }
 
 .picWrapper{
-	width:100vw;
-	height:100vh;
-	display:flex;
-  align-items: center;
-  justify-content: center;
-  position:absolute;
+	  width:100vw;
+	  height:100vh;
+	  display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
 }
 
 /* Grid Settings */
 
 article {
-  display: inline-grid;
-  grid-template-rows: 215px 215px 215px;
-  grid-template-columns: 215px 215px 215px;
-  grid-gap: 50px;
+    display: inline-grid;
+    grid-template-rows: 215px 215px 215px;
+    grid-template-columns: 215px 215px 215px;
+    grid-gap: 50px;
 }
 
 /* Global settings for individual elements of the grid */
 
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid black;
-  font-size: 3em;
-  transform:scale(1);
-  transition:0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    font-size: 3em;
+    transform:scale(1);
+    transition:0.3s ease-in-out;
 }
 
 section:hover {
-  border: 5px solid white;
-  transform:scale(1.15);
-  transition:0.3s ease-in-out;
+    border: 5px solid white;
+    transform:scale(1.15);
+    transition:0.3s ease-in-out;
 }
 
 /* FOOTER */
 
 .footer{
-  top:300.3vw;
-  width:100vw;
-  height:20vh;
-  bottom:0;
-  background:black;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+    top:300.3vw;
+    width:100vw;
+    height:20vh;
+    bottom:0;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 /******************************************************************************
