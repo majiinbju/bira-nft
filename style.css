@@ -111,6 +111,25 @@ body {
 	  text-align: left;
 }
 
+/* For Tablet View */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px){
+    .links{
+        top: 75px;
+    }
+}
+ 
+/* For Mobile Portrait View */
+@media screen
+  and (max-device-width: 480px)
+  and (orientation: portrait){
+    .links{
+        top: 75px;
+        padding-right:10px;
+    }
+}
+
 .nav {
 	  position: absolute;
  	  top: 20px;
@@ -121,6 +140,7 @@ body {
 	  float:right;
 	  text-align: left;
 }
+
 
 .nav h1{
     margin-top: 10px;
@@ -180,7 +200,6 @@ body {
 
 /* TWITTER / DISCORD */
 
-
 svg {
     width: 50px;
     height: 50px;
@@ -194,6 +213,7 @@ svg:hover {
     fill:black;
     stroke:red;
 }
+
 
 /* MINTING PAGE */
 
@@ -320,6 +340,38 @@ section:hover {
     transition:0.3s ease-in-out;
 }
 
+/* For Tablet View */
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px){
+    section img{
+      width: 100px;
+      height: 100px;
+    }
+    
+    article {
+      grid-template-rows: 105px 105px 105px;
+      grid-template-columns: 105px 105px 105px;
+      grid-gap: 5px;
+    }
+}
+ 
+/* For Mobile Portrait View */
+@media screen
+  and (max-device-width: 480px)
+  and (orientation: portrait){
+    section img{
+      width: 100px;
+      height: 100px;
+    }
+    article {
+      grid-template-rows: 105px 105px 105px;
+      grid-template-columns: 105px 105px 105px;
+      grid-gap: 15px;
+    }
+}
+
+
 /* FOOTER */
 
 .footer{
@@ -339,6 +391,23 @@ section:hover {
   color:white;
   line-height: 100%;
 }
+
+@media screen
+  and (max-device-width: 480px)
+  and (orientation: portrait){
+    .footer h2{
+      font-size: 2vw;
+    }
+}
+
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px){
+   .footer h2{
+      font-size: 2vw;
+    }
+}
+
 /******************************************************************************
 End of Stylesheet for Bira Club
 ******************************************************************************/
