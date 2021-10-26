@@ -111,23 +111,23 @@ body {
 	  text-align: left;
 }
 
-/* For Tablet View */
-@media screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px){
-    .links{
-        top: 75px;
-    }
+.links h1{
+    margin-top: 10px;
+	  font-size: 1.5vw;
+	  line-height: 1.25;
+	  border-radius: 10px;
+    background:red;
+    color:black;
+	  border: 2px solid black;
+	  padding: 1px 10px 2px 10px;
+    margin-right:0.5em;
+	  display: inline-block;
 }
- 
-/* For Mobile Portrait View */
-@media screen
-  and (max-device-width: 480px)
-  and (orientation: portrait){
-    .links{
-        top: 75px;
-        padding-right:10px;
-    }
+
+.links h1:hover {
+	  border: 2px dotted black;
+	  color: red;
+    background:black;
 }
 
 .nav {
@@ -161,42 +161,6 @@ body {
     background:black;
 }
 
-/* For Tablet View */
-@media screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px){
-    .nav h1{
-    margin-top: 10px;
-	  font-size: 3.5vw;
-	  line-height: 1.25;
-	  border-radius: 10px;
-    background:red;
-    color:black;
-	  border: 2px solid black;
-	  padding: 1px 10px 2px 10px;
-    margin-right:0.5em;
-	  display: inline-block;
-    }
-}
- 
-/* For Mobile Portrait View */
-@media screen
-  and (max-device-width: 480px)
-  and (orientation: portrait){
-    .nav h1{
-    margin-top: 10px;
-	  font-size: 3.5vw;
-	  line-height: 1.25;
-	  border-radius: 10px;
-    background:red;
-    color:black;
-	  border: 2px solid black;
-	  padding: 1px 10px 2px 10px;
-    margin-right:0.5em;
-	  display: inline-block;
-}
-    }
-}
 
 /* TWITTER / DISCORD */
 
@@ -340,38 +304,6 @@ section:hover {
     transition:0.3s ease-in-out;
 }
 
-/* For Tablet View */
-@media screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px){
-    section img{
-      width: 100px;
-      height: 100px;
-    }
-    
-    article {
-      grid-template-rows: 105px 105px 105px;
-      grid-template-columns: 105px 105px 105px;
-      grid-gap: 5px;
-    }
-}
- 
-/* For Mobile Portrait View */
-@media screen
-  and (max-device-width: 480px)
-  and (orientation: portrait){
-    section img{
-      width: 100px;
-      height: 100px;
-    }
-    article {
-      grid-template-rows: 105px 105px 105px;
-      grid-template-columns: 105px 105px 105px;
-      grid-gap: 15px;
-    }
-}
-
-
 /* FOOTER */
 
 .footer{
@@ -392,22 +324,94 @@ section:hover {
   line-height: 100%;
 }
 
-@media screen
-  and (max-device-width: 480px)
-  and (orientation: portrait){
-    .footer h2{
-      font-size: 2vw;
-    }
-}
-
-@media screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px){
-   .footer h2{
-      font-size: 2vw;
-    }
-}
 
 /******************************************************************************
 End of Stylesheet for Bira Club
 ******************************************************************************/
+
+
+/******************************************************************************
+Media Queries for Responsiveness
+******************************************************************************/
+
+/* For Mobile Portrait View */
+
+@media screen
+  and (max-device-width: 480px)
+  and (orientation: portrait){
+    
+     .links{
+        top: 75px;
+        left: -20px;
+    }
+    
+     .links h1{
+        font-size: 3.5vw;
+	      line-height: 1.25;
+    }
+    
+    .nav h1{
+        font-size: 3.5vw;
+	      line-height: 1.25;
+    }
+    
+    .mint button {
+	      font-size: 7vw;
+    }
+    
+    section img{
+        width: 100px;
+        height: 100px;
+    }
+    article {
+        grid-template-rows: 105px 105px 105px;
+        grid-template-columns: 105px 105px 105px;
+        grid-gap: 15px;
+    }
+    
+    .footer h2{
+        font-size: 2vw;
+    }
+}
+    
+    
+    
+/* For Tablet View */
+
+@media screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px){
+   
+     .links{
+        top: 75px;
+        padding-right:10px;
+    }
+    
+    .links h1{
+        font-size: 3.5vw;
+	      line-height: 1.25;
+    }
+    
+    .nav h1{
+        font-size: 3.5vw;
+	      line-height: 1.25;
+    }
+    
+    .mint button {
+	      font-size: 7vw;
+    }
+    
+    section img{
+        width: 100px;
+        height: 100px;
+    }
+    article {
+        grid-template-rows: 105px 105px 105px;
+        grid-template-columns: 105px 105px 105px;
+        grid-gap: 15px;
+    }
+    
+    .footer h2{
+        font-size: 2vw;
+    }
+}
